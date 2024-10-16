@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire html</title>
+</head>
+<body>
+    <fieldset>
+    <form action="formaction">
+        <div>
+        <label for="Nom">Nom</label>
+        <input type="text" name="Nom" id="Nom" required>
+        </div>
+        <div>
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" id="prenom" required>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" max="200" required>
+        </div>
+        <div>
+            <label for="sexe">Sexe</label>
+            <select name="sexe" id="sexe" required >
+                <option value="">--Choisir un genre--</option>
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+                <option value="Autre">Autre</option>
+            </select>
+        </div>
+        <div>
+            <label for="email">Adresse Mail</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="adresse">Adresse postale</label>
+            <input type="text" name="adresse" id="adresse" required>
+        </div>
+        <div>
+            <label for="code">Code postal</label>
+            <input type="text" name="code" id="code" maxlength="5" required>
+        </div>
+        <div>
+            <label for="ville">Ville</label>
+            <input type="text" name="ville" id="ville" required>
+        </div>
+        <div>
+            <label for="metier">Métier exercé</label>
+            <select name="metier" id="metier" required >
+                <option value="">--Choisir un métier--</option>
+                <option value="Agriculteur">Agriculteur</option>
+                <option value="Artisan">Artisan, commerçant, chef d'entreprise</option>
+                <option value="Cadre">Cadre et profession intellectuel supérieure</option>
+                <option value="Employé">Employé</option>
+            </select>
+        </div>
+        <div>
+            <label for="nationalite">Nationalité</label>
+            <select name="nationalite" id="nationalite" required >
+                <option value="">--Choisir une nationalité--</option>
+                <option value="française">Française</option>
+                <option value="italienne">Italienne</option>
+                <option value="anglaise">Anglaise</option>
+                <option value="espagnole">Espagnole</option>
+                <option value="allemande">Allemande</option>
+            </select>
+        </div>
+        <div>
+            <label for="datenat">Date de naissance</label>
+            <input type="date" name="datenat" id="datenat" required>
+        </div>
+        <div>
+            <label for="paysnat">Pays de naissance</label>
+            <select name="paysnat" id="paysnat" required>
+                <option value="">--Choisir un  de naissance--</option>
+                <option value="natfrance">France</option>
+                <option value="natitalie">Italie</option>
+                <option value="natangleterre">Royaume-Uni</option>
+                <option value="natespagne">Espagne</option>
+                <option value="natallemagne">Allemagne</option>
+            </select>
+        </div>
+        <div>
+            <label for="numsecu">Numéro de sécurité sociale</label>
+            <input type="number" id="numsecu" min="0000000000000" max="9999999999999" required>
+        </div>
+        <div>
+            <label for="numpass">Numéro du passeport</label>
+            <input type="number" name="numpass" id="numpass" min="000000000" max="999999999" required>
+        </div>
+        <div>
+            <label for="datedel">Date de délivrance du passeport</label>
+            <input type="date" name="datedel" id="datedel" required>
+        </div>
+        <div>
+            <label for="dateval">Date de validité du passeport</label>
+            <input type="date" name="dateval" id="dateval" required>
+        </div>
+        <div>
+            <input type="submit" value="S'inscrire">
+        </div>
+
+    </form>
+</fieldset>
+    
+</body>
+</html>
